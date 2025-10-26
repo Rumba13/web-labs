@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Лабораторная №1 — Форматирование текста (полная структура, без JS)</title>
+  <link rel="stylesheet" href="xd.css">
+</head>
+
+<body>
+  <header style="display:flex;align-items:center;gap:12px;padding:18px">
+    <div
+      style="width:120px;height:80px;border:1px solid #cbd5e1;display:flex;align-items:absolute;justify-content:center;background:#fff">
+      <img src="D:\users\Krichevtsov\images.png" class="image-container">
+    </div>
+
+    <div style="flex:1;text-align:center;position:relative">
+      <div style="flex:1;text-align:center;position:relative">
+        <div style="
+      font-weight:800;
+      font-size:40px;
+      line-height:1;
+      display:inline-block;
+      color:#153e6d;
+      text-shadow:
+        1px 1px 0 #999,
+        2px 2px 0 #888,
+        3px 3px 0 #777,
+        4px 4px 0 #666,
+        5px 5px 5px rgba(0,0,0,0.5);">
+          Кричевцов Максим Викторович
+        </div>
+      </div>
+  </header>
+
+  <nav class="mainmenu" style="max-width:980px;margin:12px auto;padding:12px">
+    <!-- радио для основного меню -->
+    <input type="radio" name="menu" id="menu-format" checked>
+    <input type="radio" name="menu" id="menu-css">
+    <input type="radio" name="menu" id="menu-dom">
+    <input type="radio" name="menu" id="menu-cross">
+    <input type="radio" name="menu" id="menu-string">
+    <input type="radio" name="menu" id="menu-forms">
+    <input type="radio" name="menu" id="menu-data">
+    <input type="radio" name="menu" id="menu-object">
+
+    <div class="labels">
+      <label for="menu-format">Форматирование</label>
+      <label for="menu-css">CSS</label>
+      <label for="menu-dom">DOM</label>
+      <label for="menu-cross">Кроссворд</label>
+      <label for="menu-string">String</label>
+      <label for="menu-forms">Формы</label>
+      <label for="menu-data">Data</label>
+      <label for="menu-object">Object</label>
+    </div>
+
+    <div class="contents">
+      <!-- Форматирование со своими подзаданиями -->
+      <div id="content-format" class="tab-content">
+        <h2>Раздел «Форматирование»</h2>
+        <div class="subtabs">
+          <input type="radio" name="sub" id="tab-pre" checked>
+          <input type="radio" name="sub" id="tab-quotes">
+          <input type="radio" name="sub" id="tab-lists">
+          <input type="radio" name="sub" id="tab-tables">
+          <input type="radio" name="sub" id="tab-escape">
+          <input type="radio" name="sub" id="tab-bookmarks">
+          <input type="radio" name="sub" id="tab-widget">
+          <input type="radio" name="sub" id="tab-map">
+          <input type="radio" name="sub" id="tab-iframe">
+
+          <div class="labels">
+            <label for="tab-pre">Предварительно</label>
+            <label for="tab-quotes">Цитаты</label>
+            <label for="tab-lists">Списки</label>
+            <label for="tab-tables">Таблицы</label>
+            <label for="tab-escape">escape</label>
+            <label for="tab-bookmarks">Закладки</label>
+            <label for="tab-widget">Виджет</label>
+            <label for="tab-map">Карта ссылок</label>
+            <label for="tab-iframe">Плавающий фрейм</label>
+          </div>
+
+          <div class="contents">
+            <div id="c-pre" class="tab-content">
+              <h3>Предварительно отформатированный текст</h3>
+              <pre>
+            На заре ты её не буди,
+            На заре она сладко так спит;
+            Утро дышит у ней на груди,
+            Ярко пышет на ямках ланит.
+
+            И подушка ее горяча,
+            И горяч утомительный сон,
+            И, чернеясь, бегут на плеча
+            Косы лентой с обеих сторон.
+
+            А вчера у окна ввечеру
+            Долго-долго сидела она
+            И следила по тучам игру,
+            Что, скользя, затевала луна.
+
+            И чем ярче играла луна,
+            И чем громче свистал соловей,
+            Все бледней становилась она,
+            Сердце билось больней и больней.
+
+            Оттого-то на юной груди,
+            На ланитах так утро горит.
+            Не буди ж ты ее, не буди…
+            На заре она сладко так спит!
+            </pre>
+            </div>
+            <div id="c-quotes" class="tab-content">
+              <h3>Цитаты</h3>
+              <blockquote>
+                "Цени то, что имеешь. Иначе жизнь заставит тебя ценить" — Послание людям.
+              </blockquote>
+              <blockquote>
+                "Тигр сильнее волка, но волк в цирке не выступает" - Пешка Качуры.
+              </blockquote>
+              <blockquote>"Тигр не тот, кто лев, а тот кто тигр" - Наше время.</blockquote>
+            </div>
+            <div id="c-lists" class="tab-content">
+              <h2>
+                Список литературы
+              </h2>
+              <ol>
+                <li>
+                  Бобровский, С. И. Delphi7: учебный курс / С. И. Бобровский. – СПб.: Питер, 2008. – 736 с.
+                </li>
+                <li>
+                  Культин, Н. Б. Основы программирования в Delphi7 / Н. Б. Культин. – СПб.: БХВ-Петербург, 2003. – 638
+                  с.
+                </li>
+                <li>
+                  Стивенс, Р. Delphi. Готовые алгоритмы / Р. Стивенс; пер. с англ. Мерещука П.А. – 2-е изд. стер. – М.:
+                  ДМК Пресс; СПб.: Питер, 2004. – 384с.
+                </li>
+                <li>
+                  Сухарев, М. В. Основы Delphi. Профессиональный подход / М. В. Сухарев. – СПб.: Наука и техника, 2004.
+                  – 614 с.
+                </li>
+                <li>
+                  Фаронов, В. В. Delphi 5. Учебный курс / В.В. Фаронов – М.: «Нолидж», 2000. – 608 с.
+                </li>
+                <li>
+                  Фаронов, В.В. Программирование баз данных в Delphi 7. Учебный курс / В.В. Фаронов. – СПб.: Питер,
+                  2006. – 459 с.
+                </li>
+                <li>
+                  Основы алгоритмизации и программирования: учебно-методический комплекс / сост.: Д. С. Кузьменков, М.
+                  С. Долинский. – Гомель: ГГУ имени Ф. Скорины, 2022. – 168 с. – Режим доступа: <a
+                    href="http://dot3.gsu.by/course/view.php?id=5186"> http://dot3.gsu.by/course/view.php?id=5186 </a>.
+                  – Дата доступа: 27.04.2025.
+                </li>
+                <li>
+                  Кононова, З. А. Программирование в Delphi: создание приложений: учебное пособие / З. А. Кононова, С.
+                  О. Алтухова. – Липецк: Липецкий государственный педагогический университет им. П. П.
+                  Семенова-Тян-Шанского, 2020. – Часть 2. – 87 с. – Режим доступа: по подписке: <a
+                    href="https://biblioclub.ru/index.php?page=book&id=619369">https://biblioclub.ru/index.php?page=book&id=619369</a>.
+                  – Дата доступа: 03.05.2025.
+                </li>
+                <li>
+                  Гайрабекова, Т. И. Алгоритмы и алгоритмические языки: учебное пособие / Т. И. Гайрабекова. – Грозный:
+                  ЧГУ, 2021. – 133 с. – Режим доступа: для авториз. пользователей: <a
+                    href="https://e.lanbook.com/book/264020">https://e.lanbook.com/book/264020</a>. – Дата доступа:
+                  04.05.2025.
+                </li>
+                <li>
+                  Жуков, Н. С. Букварь. – Минск: Беларусь, 2005. – 128 с.
+                </li>
+              </ol>
+              <br>
+              <h2>
+                Список популярных игр
+              </h2>
+              <ul>
+                <li>Ea Fc 26</li>
+                <li> <img src="D:\users\Krichevtsov\images.png" alt="" class="">Sons Of The Forest</li>
+                <li>Baldur's Gate 3</li>
+                <li>Dota 2</li>
+                <li>CS2</li>
+                <li>Valorant</li>
+                <li>LOL</li>
+                <li>Stardew Valley</li>
+                <li>No Man's Sky</li>
+                <li>Rust</li>
+              </ul>
+              <br>
+              <h2>Список определений</h2>
+              <dl>
+                <dt>Термин 1 - Средневековье</dt>
+                <dd>Определение - исторический период, следующий за Древним миром и предшествующий Новому времени,
+                  обычно датируемый с V по XV века.</dd>
+                <dt>Термин 2 - Возрождение (Ренессанс)</dt>
+                <dd>Эпоха в истории Европы, отмеченная расцветом культуры, науки и искусства, а также возрождением
+                  античных идей и гуманистических ценностей.</dd>
+                <dt>Термин 3 - Гуманизм</dt>
+                <dd>Мировоззрение, ставящее человека и его ценности в центр мира, развивавшееся в эпоху Возрождения.
+                </dd>
+                <dt>Термин 4 - Абсолютизм</dt>
+                <dd>Форма правления, при которой вся полнота власти в государстве сосредоточена в руках монарха,
+                  опирающегося на бюрократию и постоянную армию.</dd>
+                <dt>Термин 5 - Феодализм</dt>
+                <dd>Система социально-политических отношений в Средние века, основанная на землевладении и системе
+                  вассальной зависимости.</dd>
+                <dt>Термин 6 - Реконкиста</dt>
+                <dd>Процесс отвоевания христианами Пиренейского полуострова у арабов, длившийся на протяжении многих
+                  веков.</dd>
+                <dt>Термин 7 - Гильдия</dt>
+                <dd>Объединение ремесленников или купцов, созданное для защиты своих экономических интересов и получения
+                  привилегий.</dd>
+                <dt>Термин 8 - Бунт (Восстание)</dt>
+                <dd>Форма народного протеста, часто принимающая массовый, вооруженный характер, например, "Бунташный
+                  век" в России XVII века.</dd>
+                <dt>Термин 9 - Парламент — в Англии</dt>
+                <dd>Сословно-представительное собрание, имеющее большое значение в политической жизни страны.</dd>
+                <dt>Термин 10 - Бульвар</dt>
+                <dd>В историческом контексте, широкая улица или бульвар в городе, часто пролегающий по месту срытых
+                  крепостных укреплений, например, в Париже.</dd>
+              </dl>
+            </div>
+            <div id="c-tables" class="tab-content">
+              <h2>Таблица</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Киберспортсмен</th>
+                    <th>Роль(игровая)</th>
+                    <th>Команда</th>
+                    <th colspan="2">Рейтинг</th>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>2025/2 1</th>
+                    <th>2025/2 2</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>s1mple</td>
+                    <td>AWP</td>
+                    <td>BC.GAME</td>
+                    <td>0</td>
+                    <td>1.26</td>
+                  </tr>
+                  <tr>
+                    <td>donk</td>
+                    <td>Opener</td>
+                    <td>Team Spirit</td>
+                    <td>1.30</td>
+                    <td>1.31</td>
+                  </tr>
+                  <tr>
+                    <td>m0NesY</td>
+                    <td>AWP</td>
+                    <td>Team Falcons</td>
+                    <td>1.25</td>
+                    <td>1.30</td>
+                  </tr>
+                  <tr>
+                    <td>Aleksib</td>
+                    <td>IGL</td>
+                    <td>Navi</td>
+                    <td>0.80</td>
+                    <td>0.93</td>
+                  </tr>
+                  <tr>
+                    <td>910</td>
+                    <td>AWP</td>
+                    <td>The Mongolz</td>
+                    <td>1.16</td>
+                    <td>1.26</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="3">Число игроков</td>
+                    <td colspan="2">5 </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <div id="c-escape" class="tab-content">
+              <h3>escape</h3>
+              <pre class="code-escape"><code>
+              &lt;table&gt;
+                &lt;thead&gt;
+                  &lt;tr&gt;
+                    &lt;th&gt;Киберспортсмен&lt;/th&gt;
+                    &lt;th&gt;Роль(игровая)&lt;/th&gt;
+                    &lt;th&gt;Команда&lt;/th&gt;
+                    &lt;th colspan=&quot;2&quot;&gt;Рейтинг&lt;/th&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;th&gt;&lt;/th&gt;
+                    &lt;th&gt;&lt;/th&gt;
+                    &lt;th&gt;&lt;/th&gt;
+                    &lt;th&gt;2025/2 1&lt;/th&gt;
+                    &lt;th&gt;2025/2 2&lt;/th&gt;
+                  &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                  &lt;tr&gt;
+                    &lt;td&gt;s1mple&lt;/td&gt;
+                    &lt;td&gt;AWP&lt;/td&gt;
+                    &lt;td&gt;BC.GAME&lt;/td&gt;
+                    &lt;td&gt;0&lt;/td&gt;
+                    &lt;td&gt;1.26&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td&gt;donk&lt;/td&gt;
+                    &lt;td&gt;Opener&lt;/td&gt;
+                    &lt;td&gt;Team Spirit&lt;/td&gt;
+                    &lt;td&gt;1.30&lt;/td&gt;
+                    &lt;td&gt;1.31&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td&gt;m0NesY&lt;/td&gt;
+                    &lt;td&gt;AWP&lt;/td&gt;
+                    &lt;td&gt;Team Falcons&lt;/td&gt;
+                    &lt;td&gt;1.25&lt;/td&gt;
+                    &lt;td&gt;1.30&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td&gt;Aleksib&lt;/td&gt;
+                    &lt;td&gt;IGL&lt;/td&gt;
+                    &lt;td&gt;NaVi&lt;/td&gt;
+                    &lt;td&gt;0.80&lt;/td&gt;
+                    &lt;td&gt;0.93&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td&gt;910&lt;/td&gt;
+                    &lt;td&gt;AWP&lt;/td&gt;
+                    &lt;td&gt;The Mongolz&lt;/td&gt;
+                    &lt;td&gt;1.16&lt;/td&gt;
+                    &lt;td&gt;1.26&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/tbody&gt;
+                &lt;tfoot&gt;
+                  &lt;tr&gt;
+                    &lt;td colspan=&quot;3&quot;&gt;Число игроков&lt;/td&gt;
+                    &lt;td colspan=&quot;2&quot;&gt;5&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/tfoot&gt;
+              &lt;/table&gt;
+            </code>
+          </pre>
+            </div>
+            <div id="c-bookmarks" class="tab-content">
+              <h3>Закладки</h3>
+              <p>
+                <label for="tab-pre" style="cursor:pointer;color:blue;text-decoration:underline">К стихотворению</label>
+                |
+                <label for="tab-lists" style="cursor:pointer;color:blue;text-decoration:underline">К списку
+                  литературы</label> |
+                <label for="tab-tables" style="cursor:pointer;color:blue;text-decoration:underline">К таблице</label>
+              </p>
+            </div>
+            <div id="c-widget" class="tab-content">
+              <h3>Виджет</h3>
+              <details>
+                <summary>Контр-Страйк</summary>
+                <p>Это многопользовательская игра для расслабления</p>
+              </details>
+
+              <details>
+                <summary>Дота 2</summary>
+                <p>Это любимая игра моего друга</p>
+              </details>
+
+              <details>
+                <summary>Валорант</summary>
+                <p>Аналогично первой игре</p>
+              </details>
+            </div>
+            <div id="c-map" class="tab-content">
+              <h3>Карта ссылок</h3>
+              <div class="logo-map">
+                <label for="tab-pre" class="area-a" title="К стихотворению">
+                  <span class="visually-hidden">К стихотворению</span>
+                </label>
+                <label for="tab-lists" class="area-b" title="К списку литературы">
+                  <span class="visually-hidden">К списку литературы</span>
+                </label>
+                <label for="tab-tables" class="area-c" title="К таблице">
+                  <span class="visually-hidden">К таблице</span>
+                </label>
+              </div>
+            </div>
+            <div id="c-iframe" class="tab-content">
+              <h3>Плавающий фрейм</h3><iframe class="inline-frame" src="mini.html" title="Мини-документ"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="content-css" class="tab-content">
+        <h2>Раздел CSS</h2>
+        <p>Здесь задания по CSS.</p>
+      </div>
+      <div id="content-dom" class="tab-content">
+        <h2>Раздел DOM</h2>
+        <p>Здесь задания по DOM.</p>
+      </div>
+      <div id="content-cross" class="tab-content">
+        <h2>Раздел Кроссворд</h2>
+        <p>Здесь задания по кроссворду.</p>
+      </div>
+      <div id="content-string" class="tab-content">
+        <h2>Раздел String</h2>
+        <p>Здесь задания по работе со строками.</p>
+      </div>
+      <div id="content-forms" class="tab-content">
+        <h2>Раздел Формы</h2>
+        <p>Здесь задания по формам.</p>
+      </div>
+      <div id="content-data" class="tab-content">
+        <h2>Раздел Data</h2>
+        <p>Здесь задания по дате.</p>
+      </div>
+      <div id="content-object" class="tab-content">
+        <h2>Раздел Object</h2>
+        <p>Здесь задания по объектам.</p>
+      </div>
+    </div>
+  </nav>
+
+  <footer style="max-width:980px;margin:12px auto;text-align:center;padding:12px;border-top:2px solid #e2e8f0">
+    &copy; 2025 — Кричевцов Максим Викторович — <a href="mailto:your@mail.ru">maksim.krichevtsof@mail.ru</a>
+  </footer>
+</body>
+
+</html>

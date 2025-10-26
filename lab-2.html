@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./lab-2.css">
+
+    <title>Веремеев Первая Лабораторная</title>
+</head>
+<body>
+<header class="header">
+    <h1 class="header__title">Веремеев Кирилл Александрович</h1>
+</header>
+
+<aside class="aside">
+    <div class="logo">
+        <img class="logo__image" src="./assets/logo.png" alt="Logo">
+    </div>
+    <nav class="aside-navigation">
+        <h2 class="aside-navigation__title">Подзадания</h2>
+        <ul class="aside-navigation__list">
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="aside-navigation" checked id="tab0">
+                    <span class="navigation-item__title">Стилевые свойства</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="aside-navigation" checked>
+                    <span class="navigation-item__title">Медиазапросы</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="aside-navigation">
+                    <span class="navigation-item__title">Селекторы</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="aside-navigation">
+                    <span class="navigation-item__title">Фильтры</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="aside-navigation">
+                    <span class="navigation-item__title">Flex</span>
+                </label>
+            </li>
+        </ul>
+    </nav>
+
+</aside>
+
+<div class="content">
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__item">
+                <a  href="./index.html">
+                    <input type="radio" name="navigation" >
+                    <span class="navigation-item__title">Форматирование</span>
+                </a>
+            </li>
+            <li class="navigation__item">
+                <a href="./lab-2.html">
+                    <input type="radio" name="navigation" checked>
+                    <span class="navigation-item__title">CSS</span>
+                </a>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="navigation">
+                    <span class="navigation-item__title">DOM</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="navigation">
+                    <span class="navigation-item__title">Кроссворд</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="navigation">
+                    <span class="navigation-item__title">String</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="navigation">
+                    <span class="navigation-item__title">Формы</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="navigation">
+                    <span class="navigation-item__title">Data</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="navigation">
+                    <span class="navigation-item__title">Object</span>
+                </label>
+            </li>
+        </ul>
+    </nav>
+
+    <article id="c-props" class="tab-content">
+        <h3>Задание 1. Стилевые свойства</h3>
+        <p>Продемонстрированы: обтекание, границы, подложка, колонки, scroll, z-index, позиционирование и преобразования.</p>
+
+        <h4>1. Обтекание</h4>
+        <div class="nb">Блок с обтеканием справа. Этот блок занимает половину ширины окна и обтекается текстом справа.</div>
+        <p>Этот текст обтекает блок слева. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur, eaque eum in iusto laborum magnam mollitia porro. Eligendi quae, vero? Error fugit tempora ullam? Corporis harum iusto laboriosam saepe!</p>
+        <div style="clear:both;"></div>
+
+        <h4>2. Границы</h4>
+        <p class="bordered">Абзац с вертикальными линиями по бокам. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <h4>3. Подложка</h4>
+        <div class="ground">ПОДЛОЖКА <span class="poster">Надпись поверх</span></div>
+
+        <h4>4. Колонки</h4>
+        <div class="columns">
+            <p>Пример текста в колонках с буквицей. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae eros sed magna facilisis. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            <p>Вторая колонка с текстом. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+        </div>
+
+        <h4>5. Области с прокруткой</h4>
+        <div class="scroll-zones">
+            <div class="zone">Зона 1<br>Содержимое<br>С прокруткой<br>Дополнительная строка<br>Еще одна строка<br>И еще одна</div>
+            <div class="zone">Зона 2<br>Информация<br>С прокруткой<br>Дополнительный текст<br>Еще текст<br>И еще текст</div>
+        </div>
+
+        <h4>6. Преобразование строчного элемента в блочный и наоборот</h4>
+        <div class="swap-demo">
+            <div class="block">Блочный элемент (преобразован в строчный)</div>
+            <span class="inline">Строчный элемент (преобразован в блочный)</span>
+        </div>
+
+        <h4>7. z-index и позиционирование</h4>
+        <div class="zindex-demo" style="position:relative;height:100px;">
+            <div class="layer back">Текст 1</div>
+            <div class="layer mid">Текст 2</div>
+            <div class="layer top">Текст 3</div>
+        </div>
+    </article>
+
+    <article id="c-media" class="tab-content">
+        <h3>Задание 2. Медиазапросы</h3>
+        <p>Изменение макета и текста при разных размерах экрана, наведении курсора и перестройке меню.</p>
+
+        <h4>Изменение цвета и размера при изменении ширины окна</h4>
+        <div class="media-example">Этот блок меняет цвет и размер при изменении ширины окна.</div>
+
+        <h4>Эффекты при наведении</h4>
+        <div class="hover-effect" style="padding:15px;border:1px solid #ccc;margin:10px 0;">
+            Наведи на меня - я изменюсь!
+        </div>
+
+        <h4>Изменение расположения меню</h4>
+        <p>При уменьшении ширины окна до 768px меню становится вертикальным.</p>
+
+        <h4>Преобразование многоколонного текста в одноколонный</h4>
+        <p>При уменьшении ширины окна до 600px текст из двух колонок становится одной колонкой без буквицы.</p>
+
+        <h4>Уменьшение размера шрифта</h4>
+        <p>При уменьшении ширины окна до 480px размер шрифта на странице уменьшается.</p>
+    </article>
+
+    <article id="c-selectors" class="tab-content">
+        <h3>Задание 3. Селекторы, разметка, цветовые режимы</h3>
+
+        <h4>Блочный элемент с усечением текста</h4>
+        <div class="truncate-box">
+            Это очень длинный текст, который будет усекаться с добавлением многоточия при уменьшении размера окна браузера. Попробуйте изменить размер окна, чтобы увидеть эффект.
+        </div>
+
+        <h4>Селекторы атрибутов</h4>
+        <div class="selectors-demo">
+            <a href="example.html" title="file-example">Начало совпадает (красный)</a><br>
+            <a href="my-file-example.html" title="mid-example">Середина совпадает (синий)</a><br>
+            <a href="data-end.html" title="end-data">Конец совпадает (зеленый)</a>
+        </div>
+
+        <h4>Структурные псевдоклассы</h4>
+        <ul class="pseudo-demo">
+            <li>1 элемент (красный, первый)</li>
+            <li>2 элемент (жирный, четный)</li>
+            <li>3 элемент (курсив, нечетный)</li>
+            <li>4 элемент (подчеркнутый, заданный)</li>
+            <li>5 элемент (зеленый, последний)</li>
+        </ul>
+
+        <h4>Различные способы отображения блоков</h4>
+        <div class="border-radius-demo">
+            <div class="radius-box radius1">HSL</div>
+            <div class="radius-box radius2">HSLA</div>
+            <div class="radius-box radius3">HSL</div>
+        </div>
+    </article>
+
+    <article id="c-filters" class="tab-content">
+        <h3>Задание 4. Создание тени, градиентного фона, фильтры</h3>
+
+        <h4>Тени для текста</h4>
+        <div class="shadow-demo">Текст с тенью</div>
+        <div class="multi-shadow" style="font-size:32px;margin:10px;">Объемная надпись</div>
+
+        <h4>Тени для блоков</h4>
+        <div class="block-shadow">Блок с тенью</div>
+
+        <h4>Буквица двумя способами</h4>
+        <p class="dropcap-shadow">Буквица с использованием теней. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="dropcap-pseudo">Буквица с использованием псевдокласса. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <h4>Градиентные фоны</h4>
+        <div class="gradients">
+            <div class="grad1"></div>
+            <div class="grad2"></div>
+            <div class="grad3"></div>
+        </div>
+
+        <h4>Фильтры для изображений</h4>
+        <div class="filter-demo">
+            <div>
+                <div>Размытие</div>
+                <div style="width:100px;height:100px;background:linear-gradient(45deg,red,blue);" class="blur"></div>
+            </div>
+            <div>
+                <div>Черно-белое</div>
+                <div style="width:100px;height:100px;background:linear-gradient(45deg,red,blue);" class="grayscale"></div>
+            </div>
+            <div>
+                <div>Контраст</div>
+                <div style="width:100px;height:100px;background:linear-gradient(45deg,red,blue);" class="contrast"></div>
+            </div>
+        </div>
+    </article>
+
+    <article id="c-transitions" class="tab-content">
+        <h3>Задание 5. Переходы, преобразования и анимация</h3>
+
+        <h4>Переходы</h4>
+        <div class="transition-box">Наведи на меня</div>
+
+        <h4>2D-преобразования</h4>
+        <div class="transform-demo">
+            <div class="transform-item scale">Масштаб</div>
+            <div class="transform-item translate">Перемещение</div>
+            <div class="transform-item center rotate">Центр + Вращение</div>
+            <div class="transform-item skew">Наклон</div>
+        </div>
+    </article>
+
+    <article id="c-flex" class="tab-content">
+        <h3>Задание 6. Flexbox</h3>
+
+        <h4>Выравнивание текста по вертикали и горизонтали</h4>
+        <div class="flex-align">
+            Текст по центру
+        </div>
+
+        <h4>Смещение элемента к правому краю</h4>
+        <div class="flex-shift">
+            <div>Элемент 1</div>
+            <div>Элемент 2</div>
+            <div class="shift-right">Смещен вправо</div>
+        </div>
+
+        <h4>Преобразование списка при изменении размера экрана</h4>
+        <div class="flex-responsive">
+            <div>Элемент 1</div>
+            <div>Элемент 2</div>
+            <div>Элемент 3</div>
+        </div>
+
+        <h4>Изменение порядка следования элементов</h4>
+        <div class="flex-reverse">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+
+        <h4>Flexbox контейнер</h4>
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    </article>
+
+
+</div>
+
+<footer class="footer">
+    <span class="footer__copyright">
+        © 2025 — Веремеев Кирилл Александрович
+    </span>
+
+    <a class="footer__email" href="mailto:senderium1@gmail.ru">senderium1@gmail.ru</a>
+
+</footer>
+<script src="./tabs.js"></script>
+</body>
+</html>

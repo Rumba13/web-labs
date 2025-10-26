@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Лабораторная №2 — CSS</title>
+  <link rel="stylesheet" href="my.css">
+</head>
+
+<body>
+  <header style="display:flex;align-items:center;gap:12px;padding:18px">
+    <div style="width:120px;height:80px;border:1px solid #cbd5e1;display:flex;justify-content:center;background:#fff">
+      <div style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:#e2e8f0;color:#64748b;">Логотип</div>
+    </div>
+    <div style="flex:1;text-align:center;position:relative">
+      <div style="font-weight:800;font-size:40px;line-height:1;display:inline-block;color:#153e6d;
+      text-shadow:1px 1px 0 #999,2px 2px 0 #888,3px 3px 0 #777,4px 4px 0 #666,5px 5px 5px rgba(0,0,0,0.5);">
+        Кричевцов Максим Викторович
+      </div>
+    </div>
+  </header>
+
+  <nav class="mainmenu" style="max-width:980px;margin:12px auto;padding:12px">
+    <input type="radio" name="menu" id="menu-format">
+    <input type="radio" name="menu" id="menu-css" checked>
+    <input type="radio" name="menu" id="menu-dom">
+    <input type="radio" name="menu" id="menu-cross">
+    <input type="radio" name="menu" id="menu-string">
+    <input type="radio" name="menu" id="menu-forms">
+    <input type="radio" name="menu" id="menu-data">
+    <input type="radio" name="menu" id="menu-object">
+
+    <div class="labels">
+      <a for="menu-format" href="./lab1_full_nojs (3).html">Форматирование</a>
+      <a for="menu-css" href="./lab2.html">CSS</a>
+      <label for="menu-dom" class="menu-label hover-effect">DOM</label>
+      <label for="menu-cross" class="menu-label hover-effect">Кроссворд</label>
+      <label for="menu-string" class="menu-label hover-effect">String</label>
+      <label for="menu-forms" class="menu-label hover-effect">Формы</label>
+      <label for="menu-data" class="menu-label hover-effect">Data</label>
+      <label for="menu-object" class="menu-label hover-effect">Object</label>
+    </div>
+
+    <div class="contents">
+      <div id="content-format" class="tab-content">
+        <h2>Раздел «Форматирование»</h2>
+        <p>Содержимое первой лабораторной (сохранено без изменений).</p>
+      </div>
+
+      <div id="content-css" class="tab-content">
+        <h2>Раздел «CSS»</h2>
+        <div class="subtabs">
+          <input type="radio" name="sub-css" id="tab-props" checked>
+          <input type="radio" name="sub-css" id="tab-media">
+          <input type="radio" name="sub-css" id="tab-selectors">
+          <input type="radio" name="sub-css" id="tab-filters">
+          <input type="radio" name="sub-css" id="tab-transitions">
+          <input type="radio" name="sub-css" id="tab-flex">
+
+          <div class="labels">
+            <label for="tab-props" class="hover-effect">Стилевые свойства</label>
+            <label for="tab-media" class="hover-effect">Медиазапросы</label>
+            <label for="tab-selectors" class="hover-effect">Селекторы</label>
+            <label for="tab-filters" class="hover-effect">Фильтры</label>
+            <label for="tab-transitions" class="hover-effect">Переходы</label>
+            <label for="tab-flex" class="hover-effect">Flexbox</label>
+          </div>
+
+          <div class="contents">
+
+          </div>
+        </div>
+      </div>
+
+      <div id="content-dom" class="tab-content"><h2>Раздел DOM</h2></div>
+      <div id="content-cross" class="tab-content"><h2>Раздел Кроссворд</h2></div>
+      <div id="content-string" class="tab-content"><h2>Раздел String</h2></div>
+      <div id="content-forms" class="tab-content"><h2>Раздел Формы</h2></div>
+      <div id="content-data" class="tab-content"><h2>Раздел Data</h2></div>
+      <div id="content-object" class="tab-content"><h2>Раздел Object</h2></div>
+    </div>
+  </nav>
+
+  <footer style="max-width:980px;margin:12px auto;text-align:center;padding:12px;border-top:2px solid #e2e8f0">
+    &copy; 2025 — Кричевцов Максим Викторович — <a href="mailto:maksim.krichevtsof@mail.ru">maksim.krichevtsof@mail.ru</a>
+  </footer>
+</body>
+</html>

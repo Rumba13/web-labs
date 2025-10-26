@@ -1,0 +1,276 @@
+:root {
+      --accent: rgb(17, 20, 24);
+      --bg: #f7fafc;
+      --card: #fff
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(180deg, #eef6ff 0%, #fff 60%)
+    }
+
+    header.site-header {
+      position: relative;
+      padding: 20px 16px 40px;
+      display: flex;
+      align-items: center;
+      gap: 16px
+    }
+
+    .logo {
+        position: absolute;
+        left:16px;
+        top:50%;
+        transform:translateY(-50%);
+        width: 180px;
+        height: 100px;
+    }
+    .logo img{
+        max-width: 100%;
+        max-height: 300%;
+        display: block;
+    }
+
+    .title-wrap {
+      position: relative;
+      flex: 1;
+      min-height: 80px
+    }
+
+    .title-layer {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: 800;
+      padding: 6px 12px
+    }
+
+    .title-back {
+      color: rgba(0, 0, 0, 0.12);
+      transform: translate(-77px, 0px);
+      z-index: 1
+    }
+
+    .title-mid {
+      color: rgba(0, 0, 0, 0.25);
+      transform: translate(-80px, 0px);
+      z-index: 2
+    }
+
+    .title-front {
+      color: var(--accent);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 34px;
+      z-index: 3
+    }
+
+    nav.main-nav {
+      background: var(--card);
+      border: 2px solid #ddd;
+      padding: 8px;
+      border-radius: 6px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-direction: column;
+      align-items: stretch
+    }
+
+    .main-menu {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap
+    }
+
+    .main-menu button {
+      background: transparent;
+      border: 1px solid #cbd5e1;
+      padding: 8px 10px;
+      border-radius: 4px;
+      cursor: pointer
+    }
+
+    .main-menu button.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent)
+    }
+
+    .subtasks {
+      margin: 12px;
+      padding: 12px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06)
+    }
+
+    .subtasks h3 {
+      margin: 0 0 8px
+    }
+
+    .subtask-list {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap
+    }
+
+    .subtask-list button {
+      padding: 6px 8px;
+      border-radius: 4px;
+      border: 1px solid #cbd5e1;
+      background: #fff;
+      cursor: pointer
+    }
+
+    main {
+      padding: 16px;
+      display: flex;
+      gap: 16px
+    }
+
+    .content {
+      flex: 1;
+      background: var(--card);
+      padding: 18px;
+      border-radius: 6px;
+      border: 1px solid #e2e8f0;
+      min-height: 420px
+    }
+
+    .side {
+      width: 180px
+    }
+
+    footer.site-footer {
+      text-align: center;
+      padding: 12px;
+      border-top: 4px solid #eee;
+      background: #fff;
+      margin-top: 18px
+    }
+
+    pre.poem {
+      white-space: pre-wrap;
+      background: #ffffff;
+      color: #000000;
+      padding: 12px;
+      border-radius: 6px;
+      font-family: monospace
+    }
+
+    blockquote {
+      border-left: 4px solid var(--accent);
+      padding: 10px 14px;
+      margin: 8px 0;
+      background: #f1f8ff
+    }
+
+    dl {
+      background: #fffef6;
+      padding: 10px;
+      border-radius: 6px
+    }
+
+    ul,
+    ol {
+      margin: 8px 0 16px 20px
+    }
+
+    table.sample {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0
+    }
+
+    table.sample th,
+    table.sample td {
+      border: 1px solid #cbd5e1;
+      padding: 8px
+    }
+
+    thead {
+      background: #0c0f13;
+      color: #fff
+    }
+
+    tbody {
+      background: #fff
+    }
+
+    tfoot {
+      background: #f7fafc;
+      font-style: italic
+    }
+
+    .code-escape {
+      background: #111;
+      padding: 12px;
+      color: #9ae6b4;
+      border-radius: 6px;
+      font-family: monospace
+    }
+
+    details {
+      margin: 8px 0;
+      padding: 8px;
+      border: 1px dashed #cbd5e1;
+      border-radius: 6px
+    }
+
+    .logo svg a {
+      cursor: pointer
+    }
+
+    .floating-frame {
+      position: fixed;
+      right: 18px;
+      bottom: 80px;
+      width: 340px;
+      height: 200px;
+      border: 2px solid #cbd5e1;
+      background: #fff;
+      z-index: 999;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(2, 6, 23, 0.12)
+    }
+
+    .floating-frame .bar {
+      background: #f1f5f9;
+      padding: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center
+    }
+
+    .floating-frame .bar button {
+      border: 0;
+      background: transparent;
+      cursor: pointer
+    }
+
+    .hidden {
+      display: none
+    }
+
+    @media (max-width:800px) {
+      main {
+        flex-direction: column
+      }
+
+      .side {
+        width: 100%
+      }
+    }

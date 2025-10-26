@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Веремеев Первая Лабораторная</title>
+</head>
+<body>
+<header class="header">
+    <h1 class="header__title">Веремеев Кирилл Александрович</h1>
+</header>
+
+<aside class="aside">
+    <div class="logo">
+        <img class="logo__image" src="./assets/logo.png" alt="Logo">
+    </div>
+    <nav class="aside-navigation">
+        <h2 class="aside-navigation__title">Подзадания</h2>
+        <ul class="aside-navigation__list">
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="aside-navigation" checked id="tab0">
+                    <span class="navigation-item__title">Предварительно отформатированный текст</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="aside-navigation" checked>
+                    <span class="navigation-item__title">Цитаты</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="aside-navigation">
+                    <span class="navigation-item__title">Списки</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="aside-navigation">
+                    <span class="navigation-item__title">Таблицы</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="aside-navigation">
+                    <span class="navigation-item__title">escape</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="aside-navigation">
+                    <span class="navigation-item__title">Закладки</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="aside-navigation">
+                    <span class="navigation-item__title">Виджет</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="aside-navigation">
+                    <span class="navigation-item__title">Карта ссылок</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="aside-navigation">
+                    <span class="navigation-item__title">Плавающий фрейм</span>
+                </label>
+            </li>
+        </ul>
+    </nav>
+
+</aside>
+
+<div class="content">
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__item">
+                <a  href="./index.html">
+                    <input type="radio" name="navigation" checked>
+                    <span class="navigation-item__title">Форматирование</span>
+                </a>
+            </li>
+            <li class="navigation__item">
+                <a href="./lab-2.html">
+                    <input type="radio" name="navigation">
+                    <span class="navigation-item__title">CSS</span>
+                </a>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="navigation">
+                    <span class="navigation-item__title">DOM</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="navigation">
+                    <span class="navigation-item__title">Кроссворд</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="navigation">
+                    <span class="navigation-item__title">String</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="navigation">
+                    <span class="navigation-item__title">Формы</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="navigation">
+                    <span class="navigation-item__title">Data</span>
+                </label>
+            </li>
+            <li class="navigation__item">
+                <label>
+                    <input type="radio" name="navigation">
+                    <span class="navigation-item__title">Object</span>
+                </label>
+            </li>
+        </ul>
+    </nav>
+    <article class="poem-article tab" id="poem-article">
+        <h3 class="poem-article__title article__title">Стихотворение с предварительно отформатированным текстом</h3>
+        <pre class="poem-article__poem">
+                Пленённый грёзами мечтатель,
+                Что возжелал всего и сразу,
+                То всполох в сердце нечестивый,
+                Ставший погибелью его.
+
+                О, Элефаис, ты мир создать решил,
+                Мечтанья подаривши многим,
+                Мир грёз, мир подвигов и славы,
+                Доселе невиданный канон.
+
+                Разбив святой Онейры камень,
+                Все её грёзы подчинив,
+                Ты в миг собой просторы озарил,
+                Но стал ты грешен перед нами.
+
+                Украв мечтанья нашей госпожи,
+                Ты окропил себя её слезами.
+                Так знай же, создание ретроградной бури,
+                Камалы мстят своим врагам.
+
+                Судьба твоя принадлежит перу Вергилия
+                — он вынес смертный приговор.
+                И пусть то будет воля рока,
+                А не какой-нибудь закон.
+        </pre>
+    </article>
+    <article class="quotes-article tab">
+        <h3 class="quotes-article__title article__title">Цитаты</h3>
+        <blockquote>
+            "Когда волк устает бороться, он делает вид, что помудрел." — Послание Сане.
+        </blockquote>
+        <blockquote>
+            "Вы меня не поправляйте, я вам не трусы" - Пешка Качуры.
+        </blockquote>
+        <blockquote>"Сейчас мы покажем вам, что мы не только идиоты" - Сын Сани.</blockquote>
+    </article>
+    <article>
+        <article class="bibliography-article tab" id="bibliography">
+            <h3 class="bibliography-article__title article__title">Список литературы</h3>
+            <ol class="bibliography-article__list">
+                <li>Бобровский, С. И. Delphi7: учебный курс / С. И. Бобровский. – СПб.: Питер, 2008. – 736 с.
+                </li>
+                <li>
+                    Культин, Н. Б. Основы программирования в Delphi7 / Н. Б. Культин. – СПб.: БХВ-Петербург, 2003. – 638
+                    с.
+                </li>
+                <li>
+                    Стивенс, Р. Delphi. Готовые алгоритмы / Р. Стивенс; пер. с англ. Мерещука П.А. – 2-е изд. стер. –
+                    М.:
+                    ДМК Пресс; СПб.: Питер, 2004. – 384с.
+                </li>
+                <li>
+                    Сухарев, М. В. Основы Delphi. Профессиональный подход / М. В. Сухарев. – СПб.: Наука и техника,
+                    2004.
+                    – 614 с.
+                </li>
+                <li>
+                    Фаронов, В. В. Delphi 5. Учебный курс / В.В. Фаронов – М.: «Нолидж», 2000. – 608 с.
+                </li>
+                <li>
+                    Фаронов, В.В. Программирование баз данных в Delphi 7. Учебный курс / В.В. Фаронов. – СПб.: Питер,
+                    2006. – 459 с.
+                </li>
+                <li>
+                    Основы алгоритмизации и программирования: учебно-методический комплекс / сост.: Д. С. Кузьменков, М.
+                    С. Долинский. – Гомель: ГГУ имени Ф. Скорины, 2022. – 168 с. – Режим доступа: <a
+                        href="http://dot3.gsu.by/course/view.php?id=5186">
+                    http://dot3.gsu.by/course/view.php?id=5186 </a>.
+                    – Дата доступа: 27.04.2025.
+                </li>
+                <li>
+                    Кононова, З. А. Программирование в Delphi: создание приложений: учебное пособие / З. А. Кононова, С.
+                    О. Алтухова. – Липецк: Липецкий государственный педагогический университет им. П. П.
+                    Семенова-Тян-Шанского, 2020. – Часть 2. – 87 с. – Режим доступа: по подписке: <a
+                        href="https://biblioclub.ru/index.php?page=book&id=619369">https://biblioclub.ru/index.php?page=book&id=619369</a>.
+                    – Дата доступа: 03.05.2025.
+                </li>
+                <li>
+                    Гайрабекова, Т. И. Алгоритмы и алгоритмические языки: учебное пособие / Т. И. Гайрабекова. –
+                    Грозный:
+                    ЧГУ, 2021. – 133 с. – Режим доступа: для авториз. пользователей: <a
+                        href="https://e.lanbook.com/book/264020">https://e.lanbook.com/book/264020</a>. – Дата доступа:
+                    04.05.2025.
+                </li>
+                <li>Жуков, Н. С. Букварь. – Минск: Беларусь, 2005. – 128 с.</li>
+            </ol>
+        </article>
+        <article class="popular-games-article tab">
+            <h3 class="popular-games-article__title article__title">Список Популярных Игр</h3>
+
+            <ul class="popular-games-article__list">
+                <li>Minecraft</li>
+                <li>Fortnite</li>
+                <li>Counter-Strike 2</li>
+                <li>Valorant</li>
+                <li>Baldur's Gate 3</li>
+                <li>Elden Ring</li>
+                <li>Factorio</li>
+                <li>Deponia</li>
+                <li>Kiseki</li>
+                <li>Grand Theft Auto V</li>
+            </ul>
+        </article>
+
+        <article class="definitions-article tab">
+            <h3 class="definitions-article__title article__title">Список определений</h3>
+            <dl>
+                <dt>Термин 1 - Средневековье</dt>
+                <dd>Определение - исторический период, следующий за Древним миром и предшествующий Новому времени,
+                    обычно датируемый с V по XV века.
+                </dd>
+                <dt>Термин 2 - Возрождение (Ренессанс)</dt>
+                <dd>Эпоха в истории Европы, отмеченная расцветом культуры, науки и искусства, а также возрождением
+                    античных идей и гуманистических ценностей.
+                </dd>
+                <dt>Термин 3 - Гуманизм</dt>
+                <dd>Мировоззрение, ставящее человека и его ценности в центр мира, развивавшееся в эпоху Возрождения.
+                </dd>
+                <dt>Термин 4 - Абсолютизм</dt>
+                <dd>Форма правления, при которой вся полнота власти в государстве сосредоточена в руках монарха,
+                    опирающегося на бюрократию и постоянную армию.
+                </dd>
+                <dt>Термин 5 - Феодализм</dt>
+                <dd>Система социально-политических отношений в Средние века, основанная на землевладении и системе
+                    вассальной зависимости.
+                </dd>
+                <dt>Термин 6 - Реконкиста</dt>
+                <dd>Процесс отвоевания христианами Пиренейского полуострова у арабов, длившийся на протяжении многих
+                    веков.
+                </dd>
+                <dt>Термин 7 - Гильдия</dt>
+                <dd>Объединение ремесленников или купцов, созданное для защиты своих экономических интересов и получения
+                    привилегий.
+                </dd>
+                <dt>Термин 8 - Бунт (Восстание)</dt>
+                <dd>Форма народного протеста, часто принимающая массовый, вооруженный характер, например, "Бунташный
+                    век" в России XVII века.
+                </dd>
+                <dt>Термин 9 - Парламент — в Англии</dt>
+                <dd>Сословно-представительное собрание, имеющее большое значение в политической жизни страны.</dd>
+                <dt>Термин 10 - Бульвар</dt>
+                <dd>В историческом контексте, широкая улица или бульвар в городе, часто пролегающий по месту срытых
+                    крепостных укреплений, например, в Париже.
+                </dd>
+            </dl>
+        </article>
+
+
+    </article>
+    <article class="tables-article tab" id="table">
+        <h3 class="tables-article__title article__title">Таблица</h3>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Технология</th>
+                <th>Тип</th>
+                <th>Основная сфера</th>
+                <th colspan="2">Индекс популярности</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>2024/Q1</th>
+                <th>2024/Q2</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Python</td>
+                <td>Язык</td>
+                <td>Data Science</td>
+                <td>1.28</td>
+                <td>1.32</td>
+            </tr>
+            <tr>
+                <td>TypeScript</td>
+                <td>Язык</td>
+                <td>Frontend</td>
+                <td>1.15</td>
+                <td>1.24</td>
+            </tr>
+            <tr>
+                <td>React</td>
+                <td>Фреймворк</td>
+                <td>Web</td>
+                <td>1.20</td>
+                <td>1.22</td>
+            </tr>
+            <tr>
+                <td>Rust</td>
+                <td>Язык</td>
+                <td>Systems</td>
+                <td>0.95</td>
+                <td>1.08</td>
+            </tr>
+            <tr>
+                <td>Go</td>
+                <td>Язык</td>
+                <td>Backend</td>
+                <td>1.10</td>
+                <td>1.12</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="3">Количество технологий</td>
+                <td colspan="2">5</td>
+            </tr>
+            </tfoot>
+        </table>
+    </article>
+    <article class="escape-article tab">
+        <h3 class="escape-article__title article__title">Escape</h3>
+
+        <pre class="code-escape"><code>
+  &lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Технология&lt;/th&gt;
+      &lt;th&gt;Тип&lt;/th&gt;
+      &lt;th&gt;Основная сфера&lt;/th&gt;
+      &lt;th colspan=&quot;2&quot;&gt;Индекс популярности&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;2024/Q1&lt;/th&gt;
+      &lt;th&gt;2024/Q2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Python&lt;/td&gt;
+      &lt;td&gt;Язык&lt;/td&gt;
+      &lt;td&gt;Data Science&lt;/td&gt;
+      &lt;td&gt;1.28&lt;/td&gt;
+      &lt;td&gt;1.32&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;TypeScript&lt;/td&gt;
+      &lt;td&gt;Язык&lt;/td&gt;
+      &lt;td&gt;Frontend&lt;/td&gt;
+      &lt;td&gt;1.15&lt;/td&gt;
+      &lt;td&gt;1.24&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;React&lt;/td&gt;
+      &lt;td&gt;Фреймворк&lt;/td&gt;
+      &lt;td&gt;Web&lt;/td&gt;
+      &lt;td&gt;1.20&lt;/td&gt;
+      &lt;td&gt;1.22&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Rust&lt;/td&gt;
+      &lt;td&gt;Язык&lt;/td&gt;
+      &lt;td&gt;Systems&lt;/td&gt;
+      &lt;td&gt;0.95&lt;/td&gt;
+      &lt;td&gt;1.08&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Go&lt;/td&gt;
+      &lt;td&gt;Язык&lt;/td&gt;
+      &lt;td&gt;Backend&lt;/td&gt;
+      &lt;td&gt;1.10&lt;/td&gt;
+      &lt;td&gt;1.12&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td colspan=&quot;3&quot;&gt;Количество технологий&lt;/td&gt;
+      &lt;td colspan=&quot;2&quot;&gt;5&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+            </code>
+          </pre>
+    </article>
+    <article class="bookmarks-article tab">
+        <h3 class="bookmarks-article__title article__title">Список Популярных Игр</h3>
+
+        <div class="bookmarks">
+            <a class="bookmark__link" onclick="showArticle(0)">К стихотворению</a>
+            <a class="bookmark__link" onclick="showArticle(2)">К списку литературы</a>
+            <a class="bookmark__link" onclick="showArticle(3)">К таблице</a>
+        </div>
+    </article>
+    <article class="widget-article tab">
+        <h3 class="widget-article__title article__title">Виджеты</h3>
+
+        <div class="widget-article-list">
+            <details>
+                <summary>ДОТА 2</summary>
+                Самая страшная и прекрасная игра в мире.
+            </details>
+            <details>
+                <summary>Fortnite</summary>
+                Ужас, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cupiditate enim eveniet harum
+                laudantium maiores maxime molestiae obcaecati pariatur placeat, quam reprehenderit sed, similique sint
+                soluta ut velit. Autem, voluptatum?
+            </details>
+            <details>
+                <summary>Minecraft</summary>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut deleniti doloribus modi nobis perspiciatis
+                quae qui sint tempore voluptatem voluptatum? Consequuntur, dolor quasi. Aliquid amet facilis nesciunt
+                officia voluptate. Quis.
+            </details>
+        </div>
+    </article>
+    <article class="map-article tab">
+        <h3 class="map-article__title article__title">Карта Ссылок</h3>
+        <img src="./assets/map.jpg" alt="Логотип" class="logo-image" usemap="#infographic">
+
+        <map name="infographic">
+            <area shape="poly" coords="0,0, 200,0, 0,200" href="#poem-article" alt="Стих" class="area"
+                  title="Стих" onclick="showArticle(0)">
+
+            <area shape="poly" coords="200,0, 300,100, 200,200, 100,100" href="#bibliography"
+                  alt="Список литературы" class="area" title="Список литературы" onclick="showArticle(2)">
+
+            <area shape="poly" coords="400,0, 400,200, 200,0" href="#table" alt="Таблица"
+                  class="area" title="Таблица" onclick="showArticle(3)">
+        </map>
+    </article>
+
+    <article class="iframe-article tab">
+        <h3 class="iframe-article__title article__title">Плавающий фрейм</h3>
+        <iframe class="inline-frame" src="./iframe.html" title="Мини-документ"></iframe>
+    </article>
+
+
+    <article class="article">
+        <h2 class="article__title">Раздел CSS</h2>
+        <p>Здесь задания по CSS.</p>
+    </article>
+    <article class="article">
+        <h2 class="article__title">Раздел DOM</h2>
+        <p>Здесь задания по DOM.</p>
+    </article>
+    <article class="article">
+        <h2 class="article__title">Раздел Кроссворд</h2>
+        <p>Здесь задания по кроссворду.</p>
+    </article>
+    <article class="article">
+        <h2 class="article__title">Раздел String</h2>
+        <p>Здесь задания по работе со строками.</p>
+    </article>
+    <article class="article">
+        <h2 class="article__title">Раздел Формы</h2>
+        <p>Здесь задания по формам.</p>
+    </article>
+    <article class="article">
+        <h2 class="article__title">Раздел Data</h2>
+        <p>Здесь задания по дате.</p>
+    </article>
+    <article class="article">
+        <h2 class="article__title">Раздел Object</h2>
+        <p>Здесь задания по объектам.</p>
+    </article>
+</div>
+
+<footer class="footer">
+    <span class="footer__copyright">
+        © 2025 — Веремеев Кирилл Александрович
+    </span>
+
+    <a class="footer__email" href="mailto:senderium1@gmail.ru">senderium1@gmail.ru</a>
+
+</footer>
+<script src="./tabs.js"></script>
+</body>
+</html>
